@@ -1,0 +1,141 @@
+/* 1025 - 1368 px */
+@media screen and (max-width: 1368px) {
+    html {
+		font-size: 14px;
+	}
+}
+
+/* 769 - 1024 px */
+@media screen and (max-width: 1024px) {
+    html {
+		font-size: 12px;
+    }
+    
+    .left-block{
+	    width: 54%;
+    }
+}
+
+/* 481 - 768 px */
+@media screen and (max-width: 768px) {
+    html {
+		font-size: 10px;
+    }
+
+    .left-block{
+	    width: 55%;
+        padding-left: 4%;
+    }
+
+    .hello-section .circle{
+        width: 110px;
+        height: 110px;
+
+        margin-top: -6em;
+    }
+}
+
+/* 321 - 480 px */
+@media screen and (max-width: 480px) {
+    html {
+		font-size: 8px;
+    }
+
+    .left-block{
+	    width: 57%;
+        padding-left: 5%;
+    }
+
+    .hello-section .circle{
+        width: 90px;
+        height: 90px;
+    }
+
+    header .wrapper{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    header ul{
+        width: 75%;
+    }
+
+    .about-section .achivment{
+        flex-direction: column;
+        width: 100%;
+	    margin: 2em auto;
+    }
+
+    .achivment .block{
+        width: 35%;
+        min-height: 18em;
+        margin: 0.2em 0;
+        padding: 1em;
+    }
+
+    .number-about-us .inner{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    .number-about-us .inner .block{
+        width: 45%;
+    }
+}
+
+/*  - 320 px */
+@media screen and (max-width: 320px) {
+    .hello-section .circle{
+        margin-top: -6.7em;
+    }
+
+    .left-block{
+	    width: 63%;
+        padding: 0 2% 0 2%;
+
+    }
+
+    .left-block h1{
+        font-size: 2.5em;
+    }
+
+    
+    header .wrapper{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    header li{
+        width: 30%;
+        padding: 0.2em 0;
+    }
+
+    .achivment .block{
+        width: 50%;
+        margin: 0.2em 0;
+        padding: 0.8em;
+    }
+    
+    .number-about-us .inner{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    .number-about-us .inner .block{
+        width: 45%;
+    }
+}

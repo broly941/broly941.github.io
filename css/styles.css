@@ -1,0 +1,351 @@
+/*------------------
+ 	General
+------------------*/
+	
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	font-size: 14px;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+
+/*------------------
+ 	Hero Section
+------------------*/
+
+
+.hello-section{
+	color: #444444;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: url(../img/first-bg.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+
+}
+
+.left-block{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+	width: 53%;
+	height: 100vh;
+	padding-left: 7%;
+
+	z-index: 11;
+}
+
+.left-block>*:not(.circle){
+  margin-left: 3%;
+}
+
+.hello-section .circle{
+	background: #ffe400;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+
+  	position:absolute;
+	z-index: -1;
+    margin-top: -7em;
+}
+
+
+.hello-section h1{
+	font-size: 3em;
+	font-weight: 900;
+
+	text-transform: uppercase;
+
+	margin-bottom: 1.3em;
+}
+
+.hello-section p{
+	font-size: 0.729em;
+	font-weight: 400;
+
+	color: #757575;
+
+	margin-bottom: 1.3em;
+}
+
+.btn-contact-us{
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1.143em;
+	font-weight: 700;
+
+	color: #757575;
+	border: 2px solid #757575;
+	padding: 3% 8%;
+
+	margin-bottom: 1.3em;
+}
+
+.btn-contact-us:hover{
+	background: #444444;
+	color: #ffe400;
+	border: 2px solid #444444;
+}
+
+.navigation-line{
+	display: flex;
+	flex-direction: row;
+}
+
+.navigation-line span{
+	display: block;
+	width: 2.5em;
+	height: 0.3em;
+	background: #e3e3e3;
+}
+
+.navigation-line a{
+	margin-right: 2%;
+}
+
+.navigation-line span:hover{
+	background: #444444;
+}
+
+/* .navigation-line span:nth-child(2){
+	background: #444444;
+} */
+
+/*------------------
+ 	Header
+------------------*/
+
+header{
+	color: #fff;
+	background: #2a2a2a;
+	font-size: 1.000em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+header .wrapper{
+	width: 80%;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 65%;
+
+	height: 3.5em;
+}
+
+header li:hover{
+	color: #ffe400;
+}
+
+/*------------------
+ 	About Section
+------------------*/
+
+.about-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 600px;
+	background: url(../img/second-bgs.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+
+/*------------------
+ 	Desctiption Article
+------------------*/
+
+.about-section .description{
+	color: #444444;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 55%;
+	margin: 0 auto;
+	margin-top: 4em;
+}
+
+.description h2{
+	font-size: 2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	
+	margin-bottom: 1em; 
+}
+
+.description p{
+	font-size: 0.729em;
+	font-weight: 400;
+
+	color: #757575;
+	margin-bottom: 2em; 
+}
+
+.btn-block{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.description .btn-dspptn{
+	font-size: 0.9em;
+	font-weight: 400;
+
+	text-align: center;
+	display: inline-block;
+	color: #ffe400;
+	border: 2px solid #2a2a2a;
+	background: #2a2a2a;
+	
+	padding: 1em 2em;
+	min-width: 15em;
+	margin-right: 1em;
+}
+
+.description .btn-dspptn:hover{
+	background: #ffe400;
+	color: #2a2a2a;
+	border: 2px solid #ffe400;
+}
+
+/*------------------
+ 	Achivment Article
+------------------*/
+
+.about-section .achivment{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	width: 65%;
+	margin: 3em auto;
+}
+
+.achivment .block{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background: #2a2a2a;
+	color: #fff;
+	width: 33%;
+	min-height: 18em;
+	margin: 0 0.5em;
+	padding: 0.5em;
+}
+
+.achivment .block:hover{
+	background: #ffe400;
+	color: #fff;
+}
+
+.achivment .large{
+	font-size: 4em;
+	/* color: #ffe400; */   /*При навдении на блок, 
+						      иконка не меняет цвет*/
+
+	margin-bottom: 0.4em;
+}
+
+.achivment  h5{
+	font-size: 1.214em;
+	font-weight: 700;
+
+	margin-bottom: 1em;
+}
+
+.achivment p{
+	font-size: 0.729em;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.8em;
+}
+
+
+/*------------------
+ 	Number Article
+------------------*/
+
+.about-section .number-about-us{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 65%;
+	margin: 0 auto;
+}
+
+.number-about-us .inner{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 2em;
+}
+
+.number-about-us  h3{
+	font-size: 1.6em;
+	font-weight: 700;
+	text-transform: uppercase;
+	
+	margin-bottom: 2.5em; 
+}
+
+.number-about-us  h2{
+	font-size: 2em;
+	font-weight: 700;
+	text-align: center;
+}
+
+.number-about-us  p{
+	font-size: 0.729em;
+	font-weight: 400;
+	text-align: center;
+}
+
+/*	border:2px solid red;
